@@ -40,8 +40,6 @@ body {
     padding-right: 15px;
     padding-left: 15px;
     margin: 0 auto;
-   
-    
 }
 
 img {
@@ -438,10 +436,22 @@ button {
 .socials__link:focus .socials-icon {
     fill: var(--primary-color);
 }
+.socials__link--background {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.socials__icon--fill {
+    fill: var(--primary-color);
+}
+
+.socials__link--background:hover,
+.socials__link--background:focus {
+    background: var(--accent-color);
+}
 
 /* Regular clients */
 /* Постійні клієнти */
-.regular-clients-title {
+.clients__title {
     margin-top: 0;
     margin-bottom: 50px;
 
@@ -453,11 +463,11 @@ button {
     color: var(--primary-heading-color);
 }
 
-.regular-clients {
+.clients__list {
     display: flex;
     gap: 30px;
 }
-.client-company {
+.clients__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -470,24 +480,40 @@ button {
 
     transition: border-color var(--anima-fast);
 }
-.client-company:hover, 
-.client-company:focus {
+.clients__link:hover, 
+.clients__link:focus {
     border-color: var(--accent-color);
 }
 
-.logo-icon {
+.clients__logo {
 fill: var(--main-icons-color);
 
 transition: fill var(--anima-fast);
 }
-.client-company:hover .logo-icon,
-.client-company:focus .logo-icon{
+.clients__link:hover .clients__logo--icon-color,
+.clients__link:focus .clients__logo--icon-color{
     border-color: var(--accent-color);
     fill: var(--accent-color);
 } 
 
 /* Footer*/
-.address {
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.footer--bg {
+    background: var(--background-color);
+}
+.footer__adress {
+    margin-right: 70px;
+}
+.footer__container {
+    display: flex;
+}
+.footer__logo {
+    margin-bottom: 20px;
+}
+.address__list {
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
@@ -495,47 +521,36 @@ transition: fill var(--anima-fast);
 
     transition: color var(--anima-fast);
 }
-.ft-logo {
-    margin-bottom: 20px;
-}
-.contact-list {
+.address__iteam {
     width: 231px;
 }
-.contact-list:not(:last-child) {
+.address__iteam:not(:last-child) {
     margin-bottom: 9px;
 }
-.address .city {
+.address__link--city-color {
     color: var(--primary-color);   
 }
-.address .info {
+.address__link--info, 
+.address__link--tel {
     color: var(--secondary-contacts-color); 
 }
-.address:hover,
-.address:focus {
+
+.address__link:hover,
+.address__link:focus {
     color: var(--accent-color);
 }
-.footer-bg {
-    background: var(--background-color);
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
- /* Соціальні мережі */
-/* social networks */
-.footer {
-    display: flex;
-    
-}
-.footer-adress {
-    margin-right: 70px;
-}
 
-.social-networks {
+ /* Соціальні мережі футера */
+/* Footer social networks */
+
+
+.footer__networks {
     display: block;
     width: 206px;
     margin-right: 93px;
     padding: 0;
 } 
-.title-social-networks {
+.footer__title-networks {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -543,45 +558,18 @@ transition: fill var(--anima-fast);
     
     color: var(--primary-color);
 }
-.ft-socials {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     gap: 10px;
-}
-
-.ft-socials-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.1);
-    
-    transition: background var(--anima-fast);
-}
- .ft-socials-icon {
-     fill: var(--primary-color);
-}
-
- .ft-socials-link:hover,
- .ft-socials-link:focus {
-     background: var(--accent-color);
-}
 
 /* Subscription
 Підписка */
 
-.footer-subscription {
+.footer__subscription {
     display: block;
     width: 570px;
     padding: 0;
 }
 
-.title-subscription {
-    margin-top: 14px;
+.footer__title-subscription {
+    /* margin-top: 14px; */
     margin-bottom: 20px;
 
     font-weight: 700;
