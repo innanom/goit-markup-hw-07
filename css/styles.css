@@ -544,13 +544,13 @@ transition: fill var(--anima-fast);
 /* Footer social networks */
 
 
-.footer__networks {
+.networks {
     display: block;
     width: 206px;
     margin-right: 93px;
     padding: 0;
 } 
-.footer__title-networks {
+.networks__title {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -562,14 +562,14 @@ transition: fill var(--anima-fast);
 /* Subscription
 Підписка */
 
-.footer__subscription {
+.subscription {
     display: block;
     width: 570px;
     padding: 0;
 }
 
-.footer__title-subscription {
-    /* margin-top: 14px; */
+.subscription__title {
+    margin-top: 14px;
     margin-bottom: 20px;
 
     font-weight: 700;
@@ -581,11 +581,11 @@ transition: fill var(--anima-fast);
     color: var(--primary-color);
 }
 
-.user-mail{
+.subscription__user-mail{
     display: flex;
     gap: 12px;
 }
-.e-mail {
+.subscription__e-mail {
     width: 358px;
     padding-left: 16px;
     
@@ -602,7 +602,7 @@ transition: fill var(--anima-fast);
     
 }
 
-.btn-subscription {
+.subscription__btn {
     display: flex;
     align-items: center;
     text-align: center;
@@ -621,7 +621,7 @@ transition: fill var(--anima-fast);
     color: var(--primary-color);
 
 }
-.icon-send {
+.subscription__icon-send {
     fill: var(--primary-color);
 }
  
@@ -636,7 +636,7 @@ transition: fill var(--anima-fast);
     justify-content: center;
     margin-bottom: 50px;
 }
-.btn {
+.filter__btn {
     background: var(--color-bg-btn-filters);
     border-radius: 4px;
 }
@@ -644,7 +644,7 @@ transition: fill var(--anima-fast);
     margin-right: 8px;
     
 }
-.button-filter {
+.filter__button {
     padding: 6px 22px;
     border-radius: 4px;
        
@@ -661,31 +661,31 @@ transition: fill var(--anima-fast);
 
     transition: background var(--anima-fast), box-shadow var(--anima-fast), color var(--anima-fast);
 }
-.button-filter:hover,
-.button-filter:focus {
+.filter__button:hover,
+.filter__button:focus {
     background: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     color: var(--primary-color);
 }
 
-.group {
+.group__list {
     display: flex;
     flex-wrap: wrap;
 }
-.group-iteam {
+.group__iteam {
     width: 370px;
     background: var(--primary-color);
     border: 1px solid var(--border-color);
 
     transition: box-shadow var(--anima-fast);
 }
-.group-thumb {
+.group__thumb {
     position: relative;
     overflow: hidden;
         
 }
 
-.group-iteam-overlay {
+.group__overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -701,7 +701,7 @@ transition: fill var(--anima-fast);
     transition: transform var(--anima-fast);
     
 }
-.text-overlay {
+.group__text-overlay {
     margin: 0;
    
     font-size: 18px;
@@ -710,24 +710,24 @@ transition: fill var(--anima-fast);
     
     color: var(--primary-color); 
 }
-.group-iteam:hover .group-iteam-overlay {
+.group__iteam:hover .group__overlay {
     transform: translateY(0);
 }
-.group-iteam:not(:nth-child(3n)) {
+.group__iteam:not(:nth-child(3n)) {
     margin-right: 30px;
 }
-.group-iteam:not(:nth-last-child(-n+3)) {
+.group__iteam:not(:nth-last-child(-n+3)) {
     margin-bottom: 30px;
 }
-.group-iteam:hover,
-.group-iteam:focus {
+.group__iteam:hover,
+.group__iteam:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.group-container {
+.group__container {
    padding: 20px 24px;
 }
     
-.group-title {   
+.group__title {   
     margin-top: 0;
     margin-bottom: 4px;
 
@@ -737,7 +737,7 @@ transition: fill var(--anima-fast);
 
     color: var(--primary-heading-color);
 }
-.group-text {
+.group__text {
     margin-top: 0;
     margin-bottom: 0;
     
@@ -789,7 +789,7 @@ transition: fill var(--anima-fast);
 
     transition: transform var(--anima-fast), opacity var(--anima-fast);
 }
-.btn-close {
+.modal__btn-close {
     position: absolute;
     top: 8px;
     right: 8px;
@@ -808,10 +808,10 @@ transition: fill var(--anima-fast);
     border-radius: 50%;
      transition: fill var(--anima-fast);
 }
-.btn-close:hover {
+.modal__btn-close:hover {
     fill: var(--accent-color);
 }
-.modal-title {
+.modal__title {
     display: block;
     text-align: center  ;
     margin-bottom: 12px;
@@ -823,10 +823,10 @@ transition: fill var(--anima-fast);
     
     color: var(--primary-heading-color);
 }
-.modal-form-group {
+.modal__form-group {
     margin-bottom: 20px;
 }
-.modal-form-label {
+.modal__form-label {
     display: block;
     margin-bottom: 4px;
 
@@ -838,12 +838,12 @@ transition: fill var(--anima-fast);
     
     color:var(--primary-text-color);
 }
-.modal-form-wrapper {
+.modal__form-wrapper {
     position: relative;
     margin-bottom: 10px;
    
 }
-.modal-form-field {
+.modal__form-field {
     width: 100%;
     height: 40px;
     padding-left: 42px;
@@ -855,7 +855,7 @@ transition: fill var(--anima-fast);
     outline-offset: -1px;
     transition: outline var(--anima-fast);
 }
-.modal-form-icon {
+.modal__form-icon {
     position: absolute;
     top: 50%;
     left: 12px;
@@ -864,15 +864,15 @@ transition: fill var(--anima-fast);
     transition: fill var(--anima-fast);
 
 }
-.modal-form-field:focus {
+.modal__form-field:focus {
     outline-color: var(--accent-color);
     border-radius: 4px;
 
 }
-.modal-form-field:focus +.modal-form-icon {
+.modal__form-field:focus +.modal__form-icon {
     fill: var(--accent-color);
 }
-.modal-form-message {
+.modal__form-message {
     display: block;
     width: 100%;
     height: 120px;
@@ -888,7 +888,7 @@ transition: fill var(--anima-fast);
     transition: outline var(--anima-fast);
 
 }
-.modal-form-message::placeholder {
+.modal__form-message::placeholder {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
@@ -896,12 +896,12 @@ transition: fill var(--anima-fast);
     color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-form-message:focus {
+.modal__form-message:focus {
     outline-color: var(--accent-color);
     border-radius: 4px;
 } 
 
-.modal-form-agreement {
+.modal__form-agreement {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -910,11 +910,11 @@ transition: fill var(--anima-fast);
     margin-bottom: 30px;
 }
    
-.modal-form-agreement-link {
+.modal__form-agreement-link {
     color: var(--accent-color);
     text-underline-position: under;
 }
-.modal-form-checkbox {
+.modal__form-checkbox {
     appearance: none;
     width: 16px;
     height: 15px;
@@ -930,13 +930,13 @@ transition: fill var(--anima-fast);
 
     transition: 500ms
 }
-.modal-form-checkbox:checked {
+.modal__form-checkbox:checked {
     outline-color: var(--accent-color);
     background-color: var(--accent-color);
     
     background-size: 11px 8px;
 }
-.modal-form-agreement-desc {
+.modal__form-agreement-desc {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -946,7 +946,7 @@ transition: fill var(--anima-fast);
     user-select: none;
 }
 
-.modal-form-btn {
+.modal__form-btn {
     display: block;
     margin: 0 auto;
     padding: 10px 52px;
