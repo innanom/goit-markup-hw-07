@@ -9,18 +9,20 @@
 
     opacity: 1;
     transition: opacity var(--anima-fast), visibility var(--anima-fast);
-}
 
-.backdrop.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
 
-}
+    &.is-hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
 
-.backdrop.is-hidden.modal {
-    opacity: 0;
-    transform: translate (-50%, -50%) scale(0.3);
+
+
+        &.modal {
+            opacity: 0;
+            transform: translate (-50%, -50%) scale(0.3);
+        }
+    }
 }
 
 .modal {
@@ -60,11 +62,13 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     transition: fill var(--anima-fast);
+    
+    &:hover {
+        fill: var(--accent-color);
+    }
 }
 
-.modal__btn-close:hover {
-    fill: var(--accent-color);
-}
+
 
 .modal__title {
     display: block;
@@ -113,6 +117,16 @@
     outline: 1px solid transparent;
     outline-offset: -1px;
     transition: outline var(--anima-fast);
+
+    &:focus {
+            outline-color: var(--accent-color);
+            border-radius: 4px;
+    
+    }
+    
+    &:focus+.modal__form-icon {
+        fill: var(--accent-color);
+    }
 }
 
 .modal__form-icon {
@@ -125,15 +139,7 @@
 
 }
 
-.modal__form-field:focus {
-    outline-color: var(--accent-color);
-    border-radius: 4px;
 
-}
-
-.modal__form-field:focus+.modal__form-icon {
-    fill: var(--accent-color);
-}
 
 .modal__form-message {
     display: block;
@@ -150,19 +156,20 @@
     outline-offset: -1px;
     transition: outline var(--anima-fast);
 
-}
 
-.modal__form-message::placeholder {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
 
-    color: rgba(117, 117, 117, 0.5);
-}
+    &::placeholder {
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
 
-.modal__form-message:focus {
-    outline-color: var(--accent-color);
-    border-radius: 4px;
+        color: rgba(117, 117, 117, 0.5);
+    }
+
+    &:focus {
+        outline-color: var(--accent-color);
+        border-radius: 4px;
+    }
 }
 
 .modal__form-agreement {

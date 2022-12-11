@@ -21,6 +21,18 @@
     &:focus {
         background: var(--accent-color);
     }
+    &:hover .socials__icon,
+    &:focus .socials__icon {
+        fill: var(--primary-color);
+    }
+}
+.socials__link--background {
+    background: rgba(255, 255, 255, 0.1);
+
+    &:hover,
+    &:focus {
+        background: var(--accent-color);
+    }
 }
 
 .socials__icon {
@@ -31,18 +43,5 @@
      fill: var(--primary-color);
  }
 
-.socials__link:hover .socials__icon,
-.socials__link:focus .socials__icon {
-     fill: var(--primary-color);
-}
-
-.socials__link--background {
-     background: rgba(255, 255, 255, 0.1);
- 
 
 
-    &:hover,
-    &:focus {
-        background: var(--accent-color);
-    }
-}

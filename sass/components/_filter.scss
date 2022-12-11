@@ -7,10 +7,10 @@
 .filter__btn {
     background: var(--color-bg-btn-filters);
     border-radius: 4px;
-}
 
-.filter__btn:not(:last-child) {
-    margin-right: 8px;
+    &:not(:last-child) {
+        margin-right: 8px;
+    }
 
 }
 
